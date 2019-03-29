@@ -6,16 +6,18 @@ public class SchwabMovement : MonoBehaviour
 {
 
 	public Rigidbody2D rb;
-	//public Vector2 vel = new Vector2(0.0f, 2.0f);
+	private float vel = 0;
+	private float vel2 = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+    	vel = Random.Range(0.5f, 5f);
+		vel2 = Random.Range(-0.5f, 0.5f);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(-Random.Range(0.5f, 10f), 0.0f);
+        rb.velocity = new Vector2(-vel, vel2);
     }
 }
