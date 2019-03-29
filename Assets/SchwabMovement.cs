@@ -16,6 +16,6 @@ public class SchwabMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(-Random.Range(0.5f, 5f), 0.0f);
+        rb.velocity = new Vector2(-Random.Range(0.5f, 10f), 0.0f);
     }
 }
